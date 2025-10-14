@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><asp:ContentPlaceHolder ID="PageTitle" runat="server" /> | Bhuvan Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" runat="server"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <h1>Bhuvan Patel Thumu</h1>
+            <nav>
+                <ul>
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="About.aspx">About</a></li>
+                    <li><a href="Projects.aspx">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </main>
+
+        <footer>
+            <p>&copy; <%: DateTime.Now.Year %> Bhuvan Patel Thumu | All Rights Reserved</p>
+        </footer>
+    </form>
+</body>
+</html>
