@@ -11,7 +11,7 @@ namespace Bhuvan_Portfolio_Site
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            bool isLoggedIn = (Session["Email"] != null);
         }
     }
 }

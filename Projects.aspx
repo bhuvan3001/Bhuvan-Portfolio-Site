@@ -21,7 +21,7 @@
                     <p><strong>Technologies:</strong> HTML, CSS, ASP.NET WebForms, Visual Studio</p>
                     <div class="project-links">
                         <a href="<%: ResolveUrl("~/Default.aspx") %>" target="_blank">View Live Website</a> |
-                        <a href="https://github.com/bhuvanpatelthumu/portfolio" target="_blank">GitHub Repo</a>
+                        <a href="https://github.com/bhuvan3001/Bhuvan-Portfolio-Site" target="_blank">GitHub Report</a>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="Bhuvan_Portfolio_Site.login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="login3.aspx.cs" Inherits="Bhuvan_Portfolio_Site.login3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="PageTitle" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -33,6 +33,12 @@
     </tr>
     <tr>
         <td style="text-align: right; width: 413px">&nbsp;</td>
+        <asp:SqlDataSource ID="dsLogin" runat="server" ConnectionString="<%$ ConnectionStrings:5680LabsConnectionString2 %>" ProviderName="<%$ ConnectionStrings:5680LabsConnectionString2.ProviderName %>" SelectCommand="SELECT * FROM [Logins] WHERE (([User_Email] = @User_Email) AND ([User_Pass] = @User_Pass))">
+            <SelectParameters>
+                <asp:Parameter Name="User_Email" Type="String" />
+                <asp:Parameter Name="User_Pass" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
         <td style="text-align: left; width: 434px">
             <asp:Label ID="lblError" runat="server"></asp:Label>
         </td>
@@ -45,3 +51,4 @@
 <p>
 </p>
 </asp:Content>
+

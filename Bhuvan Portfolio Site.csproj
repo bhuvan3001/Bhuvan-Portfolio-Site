@@ -74,17 +74,26 @@
     <Content Include="Images\self.jpeg" />
     <Content Include="Images\superstoresales.jpeg" />
     <Content Include="Images\vehicleplatedetection.jpeg" />
+    <Content Include="login.aspx" />
     <Content Include="styles.css" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Projects.aspx" />
-    <Content Include="login.aspx" />
     <Content Include="loginsuccess.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="login3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.master.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
@@ -115,19 +124,26 @@
     <Compile Include="Projects.aspx.designer.cs">
       <DependentUpon>Projects.aspx</DependentUpon>
     </Compile>
-    <Compile Include="login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="loginsuccess.aspx.cs">
       <DependentUpon>loginsuccess.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="loginsuccess.aspx.designer.cs">
       <DependentUpon>loginsuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login3.aspx.cs">
+      <DependentUpon>login3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login3.aspx.designer.cs">
+      <DependentUpon>login3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
